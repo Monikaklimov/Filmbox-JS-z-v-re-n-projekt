@@ -20,7 +20,7 @@
 		<script src="mdb5-standard-UI-kit-free-6.0.1/js/mdb.min.js" defer></script>
 		<link rel="stylesheet" href="styly.css" />
 	</head>
-	<body class="landing-page">
+	<body>
 		<!-- Navigace -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container-fluid">
@@ -48,27 +48,45 @@
 			</div>
 		</nav>
 
-		<!-- Úvod -->
-		<div class="p-5 text-center bg-image intro">
-			<div class="mask" style="background-color: rgba(255, 255, 255, 0.9)">
-				<div class="d-flex justify-content-center align-items-center h-100">
-					<div class="">
-						<h1 class="mb-3">FilmBox</h1>
-						<h5 class="mb-4">Všechny vaše oblíbené filmy na jednom místě</h5>
-						<a class="btn btn-light btn-lg shadow-4 m-2" href="seznam.html"
-							>Seznam filmů</a
-						>
-						<a class="btn btn-light btn-lg shadow-4 m-2" href="o-webu.html"
-							>O webu</a
-						>
+		<!-- Seznam filmů -->
+		<div class="container-lg mt-5">
+			<div class="row row-cols-1 row-cols-md-3 g-4" id="seznam-filmu">
+				<div class="col">
+					<div class="card">
+						<img
+							src="https://via.placeholder.com/780x520?text=Plak%C3%A1t"
+							width="780"
+							height="520"
+							class="card-img-top"
+							alt="plakát"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Název filmu</h5>
+							<p class="card-text">Krátký popisek filmu.</p>
+							<a href="film.html" class="btn btn-primary">Přehrát</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img
+							src="https://via.placeholder.com/780x520?text=Plak%C3%A1t"
+							width="780"
+							height="520"
+							class="card-img-top"
+							alt="plakát"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Druhý film</h5>
+							<p class="card-text">Popisek druhého filmu.</p>
+							<a href="film.html" class="btn btn-primary">Přehrát</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Načtení JavaScriptových souborů -->
 		<script src="spolecne.js"></script>
 		<script src="seznam.js"></script>
-		<script src="film.js"></script>
 	</body>
 </html>
